@@ -9,7 +9,7 @@ body {
   justify-content: center;
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  background-color: #E5E5E5;
+  background-color: #fff;
   width: 100%;
   height: 100%;
 }
@@ -19,6 +19,24 @@ body {
 }
 
 app-root {
-  width: 600px;
+  width: 800px;
   height: 100%;
+}
+
+.carousel-dot {
+  border-color: #6D6D6D !important;
+}
+
+.carousel-dot-active {
+  background-color: #6D6D6D !important;
+}
+
+.carousel-arrow {
+  top: 42% !important;
+}
+
+@media screen and (max-width: 600px) {
+  .carousel-arrow {
+    display: none !important;
+  }
 }
