@@ -12,6 +12,7 @@
       <div class="info-card__header">
         <h1 class="info-card__title">Свой бар</h1>
         <button
+          *ngIf="!isAdding"
           class="delete-button"
           mat-icon-button
           aria-label="Удалить"
@@ -35,7 +36,7 @@
   <div class="carousel-cell">
     <div class="info-card">
       <div class="info-card__header">
-        <h1 class="info-card__title">Чужой бар</h1>
+        <h1 class="info-card__title">Свой бар</h1>
         <button
           class="delete-button"
           mat-icon-button
@@ -44,20 +45,22 @@
           <mat-icon>highlight_off</mat-icon>
         </button>
       </div>
-      <p class="info-card__description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consectetur accumsan diam, eu semper purus accumsan eget libero.
-      </p>
+      <div class="info-card__event-info">
+        <p class="info-card__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consectetur accumsan diam, eu semper purus accumsan eget libero.
+        </p>
+        <mat-icon *ngIf="isAdding">add_circle_outline</mat-icon>
+      </div>
       <div class="info-card__footer">
-        <h6 class="info-card__event-beginning-info">Сегодня в 14:20</h6>
-        <p class="price">~ 1000 р.</p>
+        <h6 class="info-card__event-beginning-info">Сегодня в 10:50</h6>
+        <p class="price">~ 2500 р.</p>
       </div>
     </div>
   </div>
-
   <div class="carousel-cell">
     <div class="info-card">
       <div class="info-card__header">
-        <h1 class="info-card__title">Просто бар</h1>
+        <h1 class="info-card__title">Свой бар</h1>
         <button
           class="delete-button"
           mat-icon-button
@@ -66,12 +69,15 @@
           <mat-icon>highlight_off</mat-icon>
         </button>
       </div>
-      <p class="info-card__description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consectetur accumsan diam, eu semper purus accumsan eget libero.
-      </p>
+      <div class="info-card__event-info">
+        <p class="info-card__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consectetur accumsan diam, eu semper purus accumsan eget libero.
+        </p>
+        <mat-icon *ngIf="isAdding">add_circle_outline</mat-icon>
+      </div>
       <div class="info-card__footer">
-        <h6 class="info-card__event-beginning-info">Сегодня в 19:50</h6>
-        <p class="price">~ 3000 р.</p>
+        <h6 class="info-card__event-beginning-info">Сегодня в 10:50</h6>
+        <p class="price">~ 2500 р.</p>
       </div>
     </div>
   </div>
