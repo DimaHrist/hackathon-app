@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-planning-list',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlanningListComponent implements OnInit {
 
-  constructor() { }
+  public list: any;
+
+  constructor(
+    private readonly api: ApiService
+  ) { }
 
   ngOnInit(): void {
+    this.api.getList().subscribe(list => this.list = list?.data);
   }
 
 }
