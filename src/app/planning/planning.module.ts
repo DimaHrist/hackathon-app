@@ -6,11 +6,13 @@ import { PlanningRoutingModule } from './planning-routing.module';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
 import {MatIconModule, MatIconRegistry} from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { AddItemComponent } from './add-item/add-item.component';
 
 @NgModule({
   declarations: [
     PlanningListComponent,
-    PlanningItemComponent
+    PlanningItemComponent,
+    AddItemComponent
   ],
   imports: [
     CommonModule,

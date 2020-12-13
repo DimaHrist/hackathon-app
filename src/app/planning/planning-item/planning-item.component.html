@@ -1,4 +1,4 @@
-<div class="line"></div>
+<div class="line" *ngIf="!isAdding"></div>
 
 <carousel
   [height]="165"
@@ -19,9 +19,12 @@
           <mat-icon>highlight_off</mat-icon>
         </button>
       </div>
-      <p class="info-card__description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consectetur accumsan diam, eu semper purus accumsan eget libero.
-      </p>
+      <div class="info-card__event-info">
+        <p class="info-card__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consectetur accumsan diam, eu semper purus accumsan eget libero.
+        </p>
+        <mat-icon *ngIf="isAdding">add_circle_outline</mat-icon>
+      </div>
       <div class="info-card__footer">
         <h6 class="info-card__event-beginning-info">Сегодня в 7:50</h6>
         <p class="price">~ 1000 р.</p>
