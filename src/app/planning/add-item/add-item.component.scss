@@ -29,9 +29,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 
     .mat-icon {
       transform: scale(2.5);
+      transition: .2s;
+
+      &.selected {
+        transform: scale(2.8);
+        color: #4CAF50;
+      }
     }
 
     .title {

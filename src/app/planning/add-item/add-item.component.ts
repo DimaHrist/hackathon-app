@@ -9,7 +9,13 @@ export class AddItemComponent implements OnInit {
 
   constructor() { }
 
+  selected = 2;
+
   ngOnInit(): void {
+  }
+
+  select(id: number): void {
+    this.selected = id;
   }
 
 }

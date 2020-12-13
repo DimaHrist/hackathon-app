@@ -1,18 +1,18 @@
 <div class="line"></div>
 
 <div class="wrapper">
-    <div class="item">
-      <mat-icon>insert_invitation</mat-icon>
+    <div class="item" (click)="select(1)">
+      <mat-icon [class.selected]="selected === 1">insert_invitation</mat-icon>
       <span class="title">События</span>
     </div>
 
-    <div class="item">
-      <mat-icon>map</mat-icon>
+    <div class="item" (click)="select(2)">
+      <mat-icon  [class.selected]="selected === 2">map</mat-icon>
       <span class="title">Экскурсии</span>
     </div>
 
-    <div class="item">
-      <mat-icon>pin_drop</mat-icon>
+    <div class="item" (click)="select(3)">
+      <mat-icon  [class.selected]="selected === 3">pin_drop</mat-icon>
       <span class="title">Места</span>
     </div>
 </div>
