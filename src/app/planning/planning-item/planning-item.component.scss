@@ -8,8 +8,12 @@
 .line {
   background-color: #0086A4;
   width: 3px;
-  height: 50px;
+  height: 30px;
   margin: 5px 0;
+
+  &--double {
+    height: 60px;
+  }
 }
 
 .time-interval {
@@ -26,8 +30,17 @@
   flex-direction: column;
   background-color: #fff;
   padding: 10px 15px;
-  //margin: 0 15px;
   align-self: stretch;
+
+  &--custom {
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 10px 15px;
+    align-self: stretch;
+    height: 125px;
+  }
 
   &__header {
     display: flex;
@@ -101,3 +114,23 @@
   }
 }
 
+.custom-event {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .mat-icon {
+    transform: scale(5);
+    color: rgba(0, 0, 0, .2);
+
+    &--air{
+      color: rgba(0, 0, 0, .2);
+      transform: rotate(45deg) scale(5);
+    }
+  }
+}
+
+.icon {
+  margin-right: 40px;
+}

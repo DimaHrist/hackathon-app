@@ -1,5 +1,152 @@
-<app-planning-item></app-planning-item>
-<app-planning-item></app-planning-item>
-<app-planning-item></app-planning-item>
-<app-planning-item></app-planning-item>
+
+<h2>Дорога</h2>
+<div class="line"></div>
+
+<carousel
+  [height]="165"
+  cellWidth="100%"
+  [arrows]="true"
+  [dots]="true"
+  [arrowsOutside]="true">
+
+  <div class="carousel-cell">
+    <div class="info-card--custom">
+      <div class="info-card__header">
+        <h1 class="info-card__title">Свой вариант</h1>
+        <button
+          class="delete-button"
+          mat-icon-button
+          aria-label="Удалить"
+          color="warn">
+          <mat-icon>highlight_off</mat-icon>
+        </button>
+      </div>
+      <div class="custom-event">
+        <p class="info-card__description">
+          Вы добираетесь самостоятельно
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="carousel-cell">
+    <div class="info-card--custom">
+      <div class="info-card__header">
+        <h1 class="info-card__title">Авиабилеты</h1>
+        <button
+          class="delete-button"
+          mat-icon-button
+          aria-label="Удалить"
+          color="warn">
+          <mat-icon>highlight_off</mat-icon>
+        </button>
+      </div>
+      <div class="custom-event">
+        <p class="info-card__description">
+          <a
+            href="https://www.aviasales.ru/"
+            target="_blank"
+            style="padding-right: 10px;">
+            Забронировать!</a>
+        </p>
+        <div class="icon">
+          <mat-icon class="mat-icon--air">local_airport</mat-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-cell">
+    <div class="info-card--custom">
+      <div class="info-card__header">
+        <h1 class="info-card__title">ЖД билеты</h1>
+        <button
+          class="delete-button"
+          mat-icon-button
+          aria-label="Удалить"
+          color="warn">
+          <mat-icon>highlight_off</mat-icon>
+        </button>
+      </div>
+      <div class="custom-event">
+        <p class="info-card__description">
+          <a
+            href="https://жд-билеты.сайт"
+            target="_blank"
+            style="padding-right: 10px;">
+            Забронировать!</a>
+        </p>
+
+        <div class="icon">
+          <mat-icon class="mat-icon">directions_transit</mat-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</carousel>
+
+<div class="line"></div>
+<h2>Жилье</h2>
+<div class="line"></div>
+
+<carousel
+  [height]="165"
+  cellWidth="100%"
+  [arrows]="true"
+  [dots]="true"
+  [arrowsOutside]="true">
+
+  <div class="carousel-cell">
+    <div class="info-card--custom">
+      <div class="info-card__header">
+        <h1 class="info-card__title">Свой вариант</h1>
+        <button
+          class="delete-button"
+          mat-icon-button
+          aria-label="Удалить"
+          color="warn">
+          <mat-icon>highlight_off</mat-icon>
+        </button>
+      </div>
+      <div class="custom-event">
+        <p class="info-card__description">
+          Вы размещаетесь самостоятельно
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="carousel-cell">
+    <div class="info-card--custom">
+      <div class="info-card__header">
+        <h1 class="info-card__title">Поиск жилья</h1>
+        <button
+          class="delete-button"
+          mat-icon-button
+          aria-label="Удалить"
+          color="warn">
+          <mat-icon>highlight_off</mat-icon>
+        </button>
+      </div>
+      <div class="custom-event">
+        <p class="info-card__description">
+          <a
+            href="https://www.booking.com/index.ru.html"
+            target="_blank"
+            style="padding-right: 10px;">Найти!</a>
+        </p>
+
+        <div class="icon">
+          <mat-icon class="mat-icon">hotel</mat-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</carousel>
+
+<div class="line"></div>
+<h2>Досуг</h2>
 <app-planning-item></app-planning-item>
