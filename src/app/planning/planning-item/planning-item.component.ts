@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatIconRegistry } from '@angular/material/icon';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-planning-item',
@@ -7,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlanningItemComponent implements OnInit {
 
-  constructor() { }
+  public removeItem(): void {
+
+  }
+
 
   ngOnInit(): void {
   }

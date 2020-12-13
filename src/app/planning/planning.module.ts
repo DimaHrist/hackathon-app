@@ -4,6 +4,8 @@ import { PlanningListComponent } from './planning-list/planning-list.component';
 import { PlanningItemComponent } from './planning-item/planning-item.component';
 import { PlanningRoutingModule } from './planning-routing.module';
 import { IvyCarouselModule } from 'angular-responsive-carousel';
+import {MatIconModule, MatIconRegistry} from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,10 @@ import { IvyCarouselModule } from 'angular-responsive-carousel';
   imports: [
     CommonModule,
     PlanningRoutingModule,
-    IvyCarouselModule
-  ]
+    IvyCarouselModule,
+    MatIconModule,
+    MatButtonModule
+  ],
+  providers: [MatIconRegistry]
 })
 export class PlanningModule { }
